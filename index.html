@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hortrafo</title>
+
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/mobile.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <img
+          src="./src/assets/logo_hortrafo_hortotec..png"
+          width="100px"
+          height="50px"
+        />
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-toggle" onclick="openMenu()">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+
+        <nav class="header-nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#howitworks" onclick="linkClick()">Sobre a empresa</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#app" onclick="linkClick()">Produtos</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#plans" onclick="linkClick()">Vantagens</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contact" onclick="linkClick()">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="section-intro">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block"
+              src="./src/assets/topo.jpeg"
+              alt="Primeiro Slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block"
+              src="./src/assets/FotoCorrente2.JPG"
+              alt="Segundo Slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block"
+              src="./src/assets/FotoCorrente3.JPG"
+              alt="Terceiro Slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-app" id="app">
+      <div class="app-content">
+        <div class="app-main">
+          <h1 class="app-title">Ramo de Atividade</h1>
+          <h2>Transformadores de Corrente/Sensores</h2>
+          <p class="app-desc">
+            Transformadores de Corrente/Sensores mais variadas relações e Normas
+            que os clientes necessitarem, como exemplo; 20A/20mA ou 10.000A/5A.
+            Janelas internas onde passaram os Cabos de 10mm à 300mm de diâmetro.
+          </p>
+          <div>
+            <h2>Transformadores de Potência</h2>
+            <p class="app-desc">
+              Monofásico de 20VA à 15.000VA e trifásico de 30.000VA. Alto
+              Transformadores, Transformadores Isoladores, Transformadores de
+              Linha/Saída.
+            </p>
+          </div>
+          <div>
+            <h2>Alta Freqüência, Indutores e Choques</h2>
+            <p class="app-desc">Muito usados em filtros e fontes chaveadas.</p>
+          </div>
+        </div>
+        <div class="app-images">
+          <img
+            src="./src/assets/Indutor.jpeg"
+            alt="imagem notificações"
+            class="app-img"
+            title="Novas notificações"
+          />
+          <img
+            src="./src/assets/indutor2.jpg"
+            alt="imagem notificações"
+            class="app-img"
+            title="Novas notificações"
+          />
+          <img
+            src="./src/assets/indutor3.jpg"
+            alt="imagem notificações"
+            class="app-img"
+            title="Novas notificações"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-plans" id="plans">
+      <h2 class="plans-title">Vantagens do Transformadores Toroidais</h2>
+      <p class="plans-desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia
+        mi quis euismod ultrices.
+      </p>
+
+      <div class="plans-cards">
+        <div class="plans-card">
+          <h3 class="plans-card-title">
+            Formatos de Transformadores EletroMagnéticos
+          </h3>
+          <p class="plans-card-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            lacinia mi quis euismod ultrices.
+          </p>
+        </div>
+
+        <div class="plans-card-especial">
+          <h3 class="plans-card-title-especial">Principais Vantagens</h3>
+          <p class="plans-card-desc-especial">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            lacinia mi quis euismod ultrices.
+          </p>
+        </div>
+
+        <div class="plans-card">
+          <h3 class="plans-card-title">
+            Alguns Fatos Sobre Transformadores Toroidais
+          </h3>
+          <p class="plans-card-desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            lacinia mi quis euismod ultrices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-contact" id="contact">
+      <h2 class="contact-title">Contato</h2>
+      <p class="contact-desc">E-mail:vendas@hortrafo.com.br</p>
+      <h3 class="contact-title">Telefones</h3>
+      <p class="contact-desc">Tel/Fax: (19)3909-3082</p>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-credit"
+        >&copy; Hortrafo - Todos os direitos reservados.</span
+      >
+    </footer>
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="./src/js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
